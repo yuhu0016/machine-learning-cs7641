@@ -1,0 +1,42 @@
+/Users/yuanshanhu/anaconda3/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py:29: DeprecationWarning: numpy.core.umath_tests is an internal NumPy module and should not be imported. It will be removed in a future NumPy release.
+  from numpy.core.umath_tests import inner1d
+2019-03-23 23:47:15,058 - __main__ - INFO - Using seed 100961669
+2019-03-23 23:47:15,058 - __main__ - INFO - Loading data
+2019-03-23 23:47:15,058 - __main__ - INFO - ----------
+2019-03-23 23:47:15,092 - data.loader - INFO - Processing PendDigitData Path: data/pendigits.csv, Dimensions: (10992, 17)
+2019-03-23 23:47:15,112 - data.loader - INFO - Data Sample:
+       0    1   2    3    4    5    6  ...   10  11   12  13   14  15  16
+0      47  100  27   81   57   37   26 ...   56  53  100  90   40  98   8
+1       0   89  27  100   42   75   29 ...   37   0   69   2  100   6   2
+2       0   57  31   68   72   90  100 ...   50  51   28  25   16   0   1
+3       0  100   7   92    5   68   19 ...  100  45   74  23   67   0   4
+4       0   67  49   83  100  100   81 ...   40  40   33  20   47   0   1
+...    ..  ...  ..  ...  ...  ...  ... ...  ...  ..  ...  ..  ...  ..  ..
+10987  36  100  24   70    0   38   49 ...   87  55   96  21  100   0   4
+10988  16   75  41  100   52   64   32 ...   21   9   62   2  100  14   2
+10989  56  100  27   79    0   39   12 ...  100  51   93  93   38  93   0
+10990  19  100   0   61    3   23   48 ...  100  66   62  97   10  81   0
+10991  38  100  37   81   12   55    0 ...  100  42   86  26   65   0   4
+
+[10992 rows x 17 columns]
+2019-03-23 23:47:15,112 - data.loader - INFO - Will pre-process data
+2019-03-23 23:47:15,112 - data.loader - INFO - Pulling features
+2019-03-23 23:47:15,114 - data.loader - INFO - Pulling classes
+2019-03-23 23:47:15,114 - data.loader - INFO - Feature dimensions: (10992, 16)
+2019-03-23 23:47:15,114 - data.loader - INFO - Classes dimensions: (10992,)
+2019-03-23 23:47:15,115 - data.loader - INFO - Class values: [0 1 2 3 4 5 6 7 8 9]
+2019-03-23 23:47:15,116 - data.loader - INFO - Class distribution: [1143 1143 1144 1055 1144 1055 1056 1142 1055 1055]
+2019-03-23 23:47:15,116 - data.loader - INFO - Class distribution (%): [10.39847162 10.39847162 10.40756914  9.59788937 10.40756914  9.59788937
+  9.6069869  10.38937409  9.59788937  9.59788937]
+2019-03-23 23:47:15,116 - data.loader - INFO - Sparse? False
+2019-03-23 23:47:15,118 - data.loader - INFO - Binary? False
+2019-03-23 23:47:15,119 - data.loader - INFO - Balanced? True
+2019-03-23 23:47:15,129 - __main__ - INFO - ----------
+2019-03-23 23:47:15,130 - __main__ - INFO - Running experiments
+2019-03-23 23:47:15,130 - __main__ - INFO - Running ICA experiment: Pen Digits (5)
+2019-03-23 23:47:15,130 - __main__ - INFO -  Details: ExperimentDetails(ds=<data.loader.PenDigitData object at 0x11d68a2e8>, ds_name=pen_digits, ds_readable_name=Pen Digits, best_nn_params={'NN__activation': ['relu'], 'NN__alpha': [0.003], 'NN__hidden_layer_sizes': [(32, 32)], 'NN__learning_rate_init': [0.008]}, threads=-1, seed=100961669)
+2019-03-23 23:47:15,130 - experiments.base - INFO - Performing ICA
+Fitting 5 folds for each of 380 candidates, totalling 1900 fits
+/Users/yuanshanhu/anaconda3/lib/python3.6/site-packages/scipy/linalg/basic.py:1321: RuntimeWarning: internal gelsd driver lwork query error, required iwork dimension not returned. This is likely the result of LAPACK bug 0038, fixed in LAPACK 3.2.2 (released July 21, 2010). Falling back to 'gelss' driver.
+  x, resids, rank, s = lstsq(a, b, cond=cond, check_finite=False)
+/Users/yuanshanhu/anaconda3/bin/pythonw: line 3: 37598 Terminated: 15          /Users/yuanshanhu/anaconda3/python.app/Contents/MacOS/python "$@"

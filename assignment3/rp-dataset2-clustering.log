@@ -1,0 +1,16 @@
+/Users/yuanshanhu/anaconda3/envs/py36/lib/python3.6/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+Traceback (most recent call last):
+  File "run_experiment.py", line 9, in <module>
+    import experiments
+  File "/Users/yuanshanhu/Desktop/Homework Resources/ML - CS 7641 Assignment 3/CS-7641-assignments-master/assignment3/experiments/__init__.py", line 20, in <module>
+    from .plotting import *
+  File "/Users/yuanshanhu/Desktop/Homework Resources/ML - CS 7641 Assignment 3/CS-7641-assignments-master/assignment3/experiments/plotting.py", line 13, in <module>
+    import matplotlib.pyplot as plt
+  File "/Users/yuanshanhu/anaconda3/envs/py36/lib/python3.6/site-packages/matplotlib/pyplot.py", line 115, in <module>
+    _backend_mod, new_figure_manager, draw_if_interactive, _show = pylab_setup()
+  File "/Users/yuanshanhu/anaconda3/envs/py36/lib/python3.6/site-packages/matplotlib/backends/__init__.py", line 62, in pylab_setup
+    [backend_name], 0)
+  File "/Users/yuanshanhu/anaconda3/envs/py36/lib/python3.6/site-packages/matplotlib/backends/backend_macosx.py", line 17, in <module>
+    from matplotlib.backends import _macosx
+RuntimeError: Python is not installed as a framework. The Mac OS X backend will not be able to function correctly if Python is not installed as a framework. See the Python documentation for more information on installing Python as a framework on Mac OS X. Please either reinstall Python as a framework, or try one of the other backends. If you are using (Ana)Conda please install python.app and replace the use of 'python' with 'pythonw'. See 'Working with Matplotlib on OSX' in the Matplotlib FAQ for more information.
