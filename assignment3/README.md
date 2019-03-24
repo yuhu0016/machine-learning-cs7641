@@ -1,3 +1,5 @@
+Taken from Chad Maron's Repository: https://github.com/cmaron/CS-7641-assignments/tree/master/assignment3
+
 # Unsupervised Learning and Dimensionality Reduction
 
 ## Requirements
